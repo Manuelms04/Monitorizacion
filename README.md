@@ -1,2 +1,2 @@
 # Monitorizacion
-![monitorizacion.png] /img/monitorizacion.png
+![monitorizacion.png] (/img/monitorizacion.png)
