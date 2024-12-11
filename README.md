@@ -1,4 +1,4 @@
-# Monitorizacion
+# Monitorización
 ![monitorizacion.png](/img/monitorizacion.png)
 
 ## Índice:
