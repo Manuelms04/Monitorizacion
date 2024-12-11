@@ -1,7 +1,7 @@
 # Monitorizacion
 ![monitorizacion.png](/img/monitorizacion.png)
 
-Índice:
+## Índice:
 
 1.- Introducción
 
