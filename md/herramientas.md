@@ -99,13 +99,58 @@ tcpdump -i 'nombre de la tarjeta'
 ```
 ![](/img/herramientas/8.png)
 
+### TCPDUMP redireccionando a un archivo
+- Para guardar la salida de `tcpdump` en un archivo, puedes redirigir la salida a un archivo de texto utilizando el operador `>`
 
+#### ***Pasos a seguir:***
+```bash
+tcpdump -i 'nombre de la tarjeta' -w 'nombre del archivo'
+```
+```bash
+chown root:root 'nombre del archivo'
+```
+```bash
+tcpdump -r 'nombre del arhivo' > 'nombre del nuevo archivo .txt'
+```
+```bash
+cat 'nombre del nuevo archivo .txt'
+```
 ![](/img/herramientas/9.png)
 ![](/img/herramientas/10.png)
+
+---
+
+## TCPTRACK
+- `tcptrack` es una herramienta de línea de comandos que muestra el tráfico de red en tiempo real. Proporciona información sobre las conexiones TCP activas en un sistema, incluyendo las direcciones IP, los puertos y el estado de cada conexión
+```bash
+tcptrack
+```
 ![](/img/herramientas/11.png)
+
+---
+
+## IPTRAF
+- `iptraf` es una herramienta de monitoreo de red en tiempo real para sistemas Linux, creada para ofrecer estadísticas detalladas sobre el tráfico de red.
+```bash
+iptraf
+```
 ![](/img/herramientas/12.png)
 ![](/img/herramientas/13.png)
+
+---
+
+## BMON
+- Bandwidth Monitor, `BMON` es una herramienta de monitoreo en Linux que se utiliza para supervisar el ancho de banda y el tráfico de red en tiempo real
+```bash
+bmon
+``` 
 ![](/img/herramientas/14.png)
+
+---
+---
+
+# Monitorización de almacenamiento
+
 ![](/img/herramientas/15.png)
 ![](/img/herramientas/16.png)
 ![](/img/herramientas/17.png)
