@@ -18,3 +18,5 @@
 - [ChatGPT](https://chatgpt.com/)
 
 - [Gemini](https://gemini.google.com/app)
+
+- [Coggle](https://coggle.it/)
