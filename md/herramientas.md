@@ -67,7 +67,7 @@ atop
 ---
 ---
 
-# Monitorización de procesos
+# Monitorización de redes
 
 La monitorización de redes consiste en el seguimiento y análisis del tráfico de datos que circula a través de una red informática. Su objetivo es garantizar que la infraestructura de red funcione de manera eficiente, segura y sin interrupciones
 
