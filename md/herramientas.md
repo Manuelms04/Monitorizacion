@@ -1,6 +1,4 @@
-# Monitorización:
-
-## Monitorización de procesos
+# Monitorización de procesos
 
 La monitorización de procesos es el seguimiento y análisis de las aplicaciones y servicios en ejecución dentro de un sistema informático para garantizar su rendimiento, estabilidad y disponibilidad. Implica observar el uso de recursos como CPU, memoria, disco y red, así como el estado de los procesos 
 
@@ -15,7 +13,7 @@ La monitorización de procesos es el seguimiento y análisis de las aplicaciones
 - Planeación de capacidad
 
 ---
-### ps
+## ps
 
 - El comando `ps` muestra información sobre los procesos en ejecución
 
@@ -44,7 +42,7 @@ ps -eo user,pid,%cpu,%mem,time --sort=-%cpu
 
 ---
 
-### top
+## top
 - El comando `top` se utiliza para observar en tiempo real el consumo de recursos del sistema, incluyendo la CPU, la memoria y los procesos que están en ejecución
 ```bash
 top
@@ -59,24 +57,58 @@ top -b -n 1 > top.txt
 
 ---
 
-### atop
+## atop
 - `atop` es una herramienta avanzada de monitoreo que ofrece información detallada sobre el consumo de recursos y los procesos en ejecución
 ```bash
 atop
 ```
 ![](/img/herramientas/6.png)
 
+---
+---
+
+# Monitorización de procesos
+
+La monitorización de redes consiste en el seguimiento y análisis del tráfico de datos que circula a través de una red informática. Su objetivo es garantizar que la infraestructura de red funcione de manera eficiente, segura y sin interrupciones
+
+### *Principales objetivos:*
+
+- Detección de problemas en la red y problemas de conectividad
+
+- Mejorar el rendimiento de la red mediante el análisis del tráfico 
+
+- Detectar intrusiones, ataques o actividades sospechosas para proteger la red
+
+- Asegurar que la red esté preparada para soportar el crecimiento del tráfico
+
+---
+
+## TCPDUMP
+
+- El comando `tcpdump` es una herramienta de línea de comandos que facilita la captura y el análisis de paquetes de red en un sistema. Es especialmente útil para solucionar problemas de red, examinar el tráfico y realizar tareas de seguridad
+```bash
+tcpdump
+```
+![](/img/herramientas/7.png)
+
+### TCPDUMP con la tarjeta de red
+- Para capturar paquetes de red con `tcpdump`, es necesario indicar la interfaz de red que deseas monitorear. Puedes ver las interfaces de red disponibles en tu sistema utilizando los comandos ip a o ifconfig
+
+```bash
+tcpdump -i 'nombre de la tarjeta'
+```
+![](/img/herramientas/8.png)
 
 
-
-
-
-
-
-
-
-
-
-
-
+![](/img/herramientas/9.png)
+![](/img/herramientas/10.png)
+![](/img/herramientas/11.png)
+![](/img/herramientas/12.png)
+![](/img/herramientas/13.png)
+![](/img/herramientas/14.png)
+![](/img/herramientas/15.png)
+![](/img/herramientas/16.png)
+![](/img/herramientas/17.png)
+![](/img/herramientas/18.png)
+![](/img/herramientas/19.png)
 
