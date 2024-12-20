@@ -13,7 +13,7 @@ La monitorización de procesos es el seguimiento y análisis de las aplicaciones
 - Planeación de capacidad
 
 ---
-## ps
+## PS
 
 - El comando `ps` muestra información sobre los procesos en ejecución
 
@@ -42,7 +42,7 @@ ps -eo user,pid,%cpu,%mem,time --sort=-%cpu
 
 ---
 
-## top
+## TOP
 - El comando `top` se utiliza para observar en tiempo real el consumo de recursos del sistema, incluyendo la CPU, la memoria y los procesos que están en ejecución
 ```bash
 top
@@ -57,7 +57,7 @@ top -b -n 1 > top.txt
 
 ---
 
-## atop
+## ATOP
 - `atop` es una herramienta avanzada de monitoreo que ofrece información detallada sobre el consumo de recursos y los procesos en ejecución
 ```bash
 atop
@@ -140,7 +140,7 @@ iptraf
 ---
 
 ## BMON
-- Bandwidth Monitor, `BMON` es una herramienta de monitoreo en Linux que se utiliza para supervisar el ancho de banda y el tráfico de red en tiempo real
+- Bandwidth Monitor, `BMON`, es una herramienta de monitoreo en Linux que se utiliza para supervisar el ancho de banda y el tráfico de red en tiempo real
 ```bash
 bmon
 ``` 
@@ -150,10 +150,76 @@ bmon
 ---
 
 # Monitorización de almacenamiento
+La monitorización de almacenamiento es el proceso de seguimiento y análisis de los recursos de almacenamiento dentro de un sistema informático. Su objetivo es garantizar la eficiencia, 
+disponibilidad y seguridad de los datos almacenados, controlando factores como el uso del espacio, la velocidad de acceso, el rendimiento de los dispositivos de almacenamiento y la salud general 
+del sistema de almacenamiento
 
+### *Principales objetivos:*
+
+- Identificar fallos o posibles fallos en los dispositivos de almacenamiento
+
+- Mejorar el uso del espacio y la eficiencia del sistema de almacenamiento
+
+- Proteger los datos almacenados mediante la supervisión de posibles riesgos
+
+- Asegurar que haya suficiente capacidad de almacenamiento para satisfacer las necesidades futuras
+
+---
+
+## FREE
+- El comando `free` muestra la cantidad de memoria libre y utilizada en el sistema: 
+    - Con el comando `free -h` la salida se presenta en un formato más fácil de leer para el usuario, con unidades de medida como KB, MB o GB según corresponda
+    - Con el comando `free -s 3` nos muestra la informacion cada 3 segundos
+```bash
+free
+```
+```bash
+free -h
+```
+```bash
+free -s 3
+```
 ![](/img/herramientas/15.png)
+
+---
+
+## DF
+- El comando `df -h` permite visualizar el espacio en disco utilizado y disponible en el sistema, mostrando esta información para cada sistema de archivos montado: 
+    - Con el comando `df -hT` se muestra el espacio en disco en un formato más comprensible para el usuario utilizando unidades legibles como KB, MB o GB
+    - Para ver el espacio de algo determinado, lo haríamos tal que asi: `df -h /` ***(Para ver el espacio de `/`)***
+  
+```bash
+df -h
+```
+```bash
+df -hT
+```
+```bash
+df -h /
+```
 ![](/img/herramientas/16.png)
+
+- Si queremos calcular el espacio de un directorio en concreto, lo haríamos tal que asi:  `du -sh /NombreDirectorio`
+```bash
+du -sh /NombreDirectorio
+```
 ![](/img/herramientas/17.png)
+
+---
+
+## IOSTAT
+- El comando `iostat` proporciona estadísticas sobre el uso de la CPU y el rendimiento de los dispositivos de entrada/salida 
+  
+```bash
+iostat
+```
 ![](/img/herramientas/18.png)
+
+- Con la opción `-x`, nos muestra información más extendida
+- Para ver las estadísticas en intervalos de 3 segundos, puedes usar el comando `iostat -x nvme0n1 3`, donde `-x` proporciona información detallada, `nvme0n1` especifica el dispositivo y `3` indica el intervalo en segundos
+
+```bash
+iostat -x nvme0n1 3
+```
 ![](/img/herramientas/19.png)
 
