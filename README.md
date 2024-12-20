@@ -12,3 +12,11 @@
 4.- [Mapa conceptual](/md/mapa.md)
 
 ## Referencias:
+
+- [Manuel Domínguez](https://github.com/mftienda)
+
+- [ChatGPT](https://chatgpt.com/)
+
+- [Gemini](https://gemini.google.com/app)
+
+- [GitHub](https://github.com/tgraf/bmon)
