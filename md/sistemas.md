@@ -15,3 +15,19 @@ Los sistemas de monitoreo especializados van más allá de las herramientas nati
     - Nagios Core (gratis), Nagios XI (pago), y plugins
 - Características:
     - Escalable, extensible e integrable
+
+![](img/sistemas/zabbix.jpg)
+
+---
+
+## PROMETHEUS
+- Qué es:
+    - Herramienta de monitoreo y alerta centrada en métricas
+- Funciones:
+    - Recolección, almacenamiento y consulta de métricas en tiempo real
+- Componentes:
+    - Prometheus Server, Exporters (para recoger datos), y Alertmanager
+- Características:
+    - Escalable, basado en series temporales, con soporte de alertas
+ 
+![](img/sistemas/prometheus.png)
